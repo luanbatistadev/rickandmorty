@@ -18,7 +18,11 @@ class RMStatusText extends StatelessWidget {
           height: 10,
           width: 10,
           decoration: BoxDecoration(
-            color: character.status != 'Dead' ? Colors.green : Colors.red,
+            color: character.status == 'Dead'
+                ? Colors.red
+                : character.status == 'unknown'
+                    ? Colors.yellow
+                    : Colors.green,
             borderRadius: const BorderRadius.all(
               Radius.circular(50),
             ),
@@ -37,7 +41,6 @@ class RMStatusText extends StatelessWidget {
           fontSize: 20,
           color: Colors.white70,
         ),
-        
       ],
     );
   }

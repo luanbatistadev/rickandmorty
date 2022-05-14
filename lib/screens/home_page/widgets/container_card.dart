@@ -26,7 +26,7 @@ class RMContainerCard extends StatelessWidget {
             onTap: () =>
                 Navigator.pushNamed(context, '/details', arguments: character),
             child: Container(
-              width: size.width * 0.82,
+              width: size.width * 0.95,
               height: 150,
               decoration: BoxDecoration(
                 color: kGreyColor,
@@ -62,7 +62,7 @@ class RMContainerCard extends StatelessWidget {
         color: Colors.grey,
       ),
       RMText(
-        text: character.origin!.name!,
+        text: character.origin!.name!.capitalize(),
       ),
     ];
   }

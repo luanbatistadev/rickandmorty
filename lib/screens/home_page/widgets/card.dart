@@ -18,7 +18,6 @@ class _RMCardState extends State<RMCard> {
 
   Widget _buildCard(Character character) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Stack(
           alignment: Alignment.centerLeft,

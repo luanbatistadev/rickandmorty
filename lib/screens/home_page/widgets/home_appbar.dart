@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rickandmorty/constansts/constants.dart';
 
 class RMHomeAppBar extends StatelessWidget {
-  const RMHomeAppBar({ Key? key }) : super(key: key);
+  const RMHomeAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

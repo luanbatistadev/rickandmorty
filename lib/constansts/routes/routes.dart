@@ -27,7 +27,7 @@ Route _createRoute(Widget page) {
     pageBuilder: (context, animation, secondaryAnimation) => page,
     transitionDuration: const Duration(milliseconds: 700),
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      const begin = Offset(0, -1);
+      const begin = Offset(-1, 0);
       const end = Offset.zero;
       const curve = Curves.ease;
       final tween = Tween(begin: begin, end: end);
